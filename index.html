@@ -79,7 +79,7 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main id="home">
         <div class="main__content1">
             <h1><b>Soluções Criativas & </b>Desenvolvimento Front-end</h1>
             <p>Bianca Ejje, Teresópolis-RJ, Desenvolvedora Front-end.</p>
@@ -95,14 +95,16 @@
                     </a>
                 </li>
                 <li>
-                    <a class="menu__link" href="" target="_blank">
+                    <a class="menu__link" href="https://www.instagram.com/biancaejje.dev?igsh=b3FyYno5bGpiOXVh" target="_blank">
                         <i class="menu__icon bi bi-instagram"></i>
                     </a>
                 </li>
             </ul>
             <button class="btn btn--primary">
+                <a class="link__projetos" href="https://github.com/biancaejje?tab=repositories">
                 <span>Ver projetos</span>
                 <i class="bi bi-arrow-down-right"></i>
+                </a>
             </button>
         </div>
         <div class="main__content2">
@@ -256,11 +258,11 @@
                 <img class="about__photo" src="assets/images/avatar.jpeg" alt="">
                 <div class="about__description">
                     <h2>Sobre mim</h2>
-                    <p>Bianca Ejje. Desenvolvedora com experiência em criação de interfaces e soluções web focadas em usabilidade, performance e boa experiência do usuário. Meu primeiro contato com tecnologia aconteceu ainda na adolescência, quando atuei como estagiária em um curso profissional de Web Designer, o que deu início à minha trajetória na área. Após esse período, fui efetivada como professora, consolidando minha base técnica e desenvolvendo habilidades de comunicação, organização e didática — competências que hoje aplico diretamente no desenvolvimento de projetos. Possuo experiência com HTML5, CSS3, JavaScript e TypeScript, além de UI e UX Design, atuando do planejamento à implementação de interfaces modernas, acessíveis e bem estruturadas.</p>  
-                    <div class="about__icons">
+                    <p id="sobre-mim">Bianca Ejje. Desenvolvedora com experiência em criação de interfaces e soluções web focadas em usabilidade, performance e boa experiência do usuário. Meu primeiro contato com tecnologia aconteceu ainda na adolescência, quando atuei como estagiária em um curso profissional de Web Designer, o que deu início à minha trajetória na área. Após esse período, fui efetivada como professora, consolidando minha base técnica e desenvolvendo habilidades de comunicação, organização e didática — competências que hoje aplico diretamente no desenvolvimento de projetos. Possuo experiência com HTML5, CSS3, JavaScript e TypeScript, além de UI e UX Design, atuando do planejamento à implementação de interfaces modernas, acessíveis e bem estruturadas.</p>  
+                    <!-- <div class="about__icons">
                         <i class="bi bi-translate"></i>
                         <span>Inglês: Intermediário | Espanhol: Básico</span>
-                    </div>
+                    </div> -->
                     <div class="description__buttons">
                         <a href="https://www.linkedin.com/in/biancaejje/" target="_blank">
                             <button class="btn btn--primary">
@@ -279,7 +281,7 @@
             <div class="about__content2">
                 <div class="col1">
                     <div class="row1">
-                        <h3>Formação</h3>
+                        <!-- <h3>Formação</h3>
                         <h4>Nutrição</h4>
                         <span>Abr 2017 - Dez 2021</span>
                         <div class="about__icons">
@@ -289,7 +291,7 @@
                         <div class="about__icons">
                             <i class="bi bi-mortarboard"></i>
                             <span>Pós-graduação Lato Sensu - Especialização em Nutrição Comportamental e Clínica</span>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- <div class="row2">
                         <span>Digital Innovation One. Fev 2023 - Atualmente</span>
@@ -306,41 +308,69 @@
                     </div> -->
                 </div>
                 <div class="col2">
-                    <h3>Cursos</h3>
-                    <div id="accordion">
-                        <div class="accordion__item active">
-                            <button class="accordion__header start">
-                                <span>Versionamento de Código com Git e GitHub</span>
-                                <i class="bi bi-caret-down-fill"></i>
-                            </button>
-                            <div class="accordion__body">
-                                <p>Digital Innovation One. NOV -2025 . 2h.</p>
-                                <p>O que é versionamento de código, Git e GitHub. Como instalar e configurar o Git em diferentes sistemas 
-                                    operacionais e como autenticar via Token e SSH. Como manusear repositórios, indo desde a criação e clonagem 
-                                    até o gerenciamento de branches, passando por todas as etapas de salvar, desfazer e sincronizar alterações 
-                                    com o repositório remoto. 
-                                </p>
+                    <h3>Cursos & Formação em Tecnologia</h3>
+                        <div id="accordion">
+                            <div class="accordion__item active">
+                                <button class="accordion__header start">
+                                    <span>Front-End Developer — Formação Completa</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body">
+                                    <p>Digital Innovation One — 75h.</p>
+                                    <p>Formação em desenvolvimento front-end com foco em HTML, CSS e JavaScript. Inclui 10 projetos práticos envolvendo responsividade, consumo de APIs, interfaces modernas e dinâmicas.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="accordion__item">
-                            <button class="accordion__header">
-                                <span>Contribuindo em um Projeto Open Source no GitHub</span>
-                                <i class="bi bi-caret-down-fill"></i>
-                            </button>
-                        <div class="accordion__body">
-                            <p>Digital Innovation One. NOV - 2025. 1h.</p>
-                            <p>Lab prático sobre colaboração em projetos de código aberto.</p>
-                        </div>
-                    </div>
-                    <div class="accordion__item">
-                        <button class="accordion__header end">
-                            <span>Front-End do zero</span>
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                        <div class="accordion__body end">
-                            <p>Digital Innovation One. DEZ - 2025. 75h.</p>
-                            <p>Desenvolvimento Front-End com HTML, CSS e JAVASCRIPT, com uma base estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas com temática do Stranger Things, Spider Man, Yu-Gi-Oh e mais.</p>
-                        </div>
+                            <div class="accordion__item">
+                                <button class="accordion__header">
+                                    <span>HTML Web Developer</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body">
+                                    <p>Estrutura semântica, acessibilidade, boas práticas, SEO básico e construção de páginas responsivas.</p>
+                                    <p>Digital Innovation One — 21h.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__header">
+                                    <span>CSS Web Developer</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body">
+                                    <p>Digital Innovation One — 43h.</p>
+                                    <p>Layouts responsivos, Flexbox, Grid, tipografia, animações, pseudo-classes e boas práticas de UI.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__header">
+                                    <span>JavaScript Web Developer</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body">
+                                    <p>Digital Innovation One — 39h.</p>
+                                    <p>Manipulação do DOM, eventos, funções assíncronas, módulos, lógica de programação e interatividade na web sem frameworks.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__header end">
+                                    <span>React Fundamentals / React Developer</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body end">
+                                    <p>Instituição a incluir — 34h.</p>
+                                    <p>Componentização, props, estado, hooks, rotas, integração com APIs e criação de interfaces escaláveis.</p>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <button class="accordion__header end">
+                                    <span>Git & GitHub</span>
+                                    <i class="bi bi-caret-down-fill"></i>
+                                </button>
+                                <div class="accordion__body end">
+                                    <p>Digital Innovation One — 11h.</p>
+                                    <p>Versionamento de código, branches, merge, pull request, colaboração, autenticação e contribuição em projetos.</p>
+                                </div>
+                            </div>
+                            </div>
                     </div>
                 </div>
         </section>
@@ -374,7 +404,7 @@
         </section>
 
     <footer>
-        <p>© 2025. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Front-end do Zero" da 
+        <p>© 2025. Portfólio desenvolvido para fins educativos no Lab "Construindo seu Portfolio Formação Front-end" da 
             <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> por 
             <a href="https://github.com/biancaejje" target="_blank">Bianca Ejje</a>.
         </p>
